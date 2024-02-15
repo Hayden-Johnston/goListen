@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Go Listen</title>
+</head>
+<body>
+  <h1>Welcome to Go Listen!</h1>
+  <p>Select your mood from the choices below and submit to receive a song suggestion:</p>
+  <form method="POST" action="/golisten">
+    <input type="checkbox" id="copyright" name="copyright">
+    <label for="copyright">Copy-right free</label><br>
+    <input type="radio" id="Happy" name="Mood" value="Happy" checked>
+    <label for="Happy">Happy</label>
+    <input type="radio" id="Sad" name="Mood" value="Sad">
+    <label for="Sad">Sad</label>
+    <input type="radio" id="Angry" name="Mood" value="Angry">
+    <label for="Angry">Angry</label>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
